@@ -2072,6 +2072,222 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Antenna_Shield"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AE"
+				(at -1.905 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Antenna_Shield"
+				(at -1.905 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Antenna with extra pin for shielding"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "antenna"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Antenna_Shield_0_1"
+				(arc
+					(start 0 -2.667)
+					(mid -0.8485 -2.1032)
+					(end -0.508 -1.143)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -1.143)
+					(mid 0.8046 -2.0885)
+					(end 0 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.905) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.762 -1.905)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Antenna_Shield_1_1"
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -6860,6 +7076,18 @@
 		(uuid "3757afc4-fdfb-49d0-ba93-8989d7a3af74")
 	)
 	(rectangle
+		(start 134.62 163.195)
+		(end 173.99 196.215)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4e374ae3-07eb-413a-8854-c826db38c1eb")
+	)
+	(rectangle
 		(start 17.78 17.145)
 		(end 67.31 43.815)
 		(stroke
@@ -6973,6 +7201,16 @@
 		)
 		(uuid "60a6e6c2-af16-4220-9c06-e741f896fd33")
 	)
+	(text "antenna L/C network "
+		(exclude_from_sim no)
+		(at 146.05 194.818 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "74cb1cdc-2a9c-4f41-a9c9-e4363ab42d8c")
+	)
 	(text "power converter\n"
 		(exclude_from_sim no)
 		(at 153.67 97.536 0)
@@ -7075,7 +7313,7 @@
 	)
 	(text "Ibat = (Vprog / Rprog) * 1100\nIbat = 500 \nVprog = 5v (vcc limit of 3uA)\n500 = 5500/Rprog\nRprog * 500 = 5500\nRprog = 5500/500\nRprog = 11r"
 		(exclude_from_sim no)
-		(at 140.97 176.53 0)
+		(at 300.228 106.934 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7379,10 +7617,22 @@
 		(uuid "ee37a6ea-9961-4009-8566-cd2ebfea1f11")
 	)
 	(junction
+		(at 156.21 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef07dfea-5869-4887-a479-e422c4511064")
+	)
+	(junction
 		(at 260.35 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f42a7f08-00f9-48ee-ba1c-79400c870b1e")
+	)
+	(junction
+		(at 163.83 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6f3cb2d-f84a-4bc7-8dce-1f516e395002")
 	)
 	(junction
 		(at 212.09 123.19)
@@ -7598,6 +7848,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 176.53) (xy 156.21 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "001fc2b5-3816-492c-b990-f99d0c0a83a9")
+	)
+	(wire
+		(pts
 			(xy 109.22 81.28) (xy 100.33 81.28)
 		)
 		(stroke
@@ -7625,6 +7885,16 @@
 			(type default)
 		)
 		(uuid "03a2c761-986f-47ff-a191-3920d34d8049")
+	)
+	(wire
+		(pts
+			(xy 167.64 176.53) (xy 167.64 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04178c15-b7a8-4545-993e-2fcedc632920")
 	)
 	(wire
 		(pts
@@ -7948,6 +8218,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 186.69) (xy 163.83 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36dc0814-43c6-432c-86dc-5299a4af32fc")
+	)
+	(wire
+		(pts
 			(xy 255.27 123.19) (xy 246.38 123.19)
 		)
 		(stroke
@@ -8255,6 +8535,16 @@
 			(type default)
 		)
 		(uuid "60735f97-527a-4966-8e05-b99dac1ecd3b")
+	)
+	(wire
+		(pts
+			(xy 156.21 176.53) (xy 153.67 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60aca76a-a668-48e9-9c98-d779b6ecc404")
 	)
 	(wire
 		(pts
@@ -8948,6 +9238,26 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 186.69) (xy 156.21 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d068a4b6-8ba4-4714-910b-951177e8a1d3")
+	)
+	(wire
+		(pts
+			(xy 137.16 176.53) (xy 146.05 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1fe305f-d5a9-427c-851b-affe629fd0f1")
+	)
+	(wire
+		(pts
 			(xy 162.56 31.75) (xy 168.91 31.75)
 		)
 		(stroke
@@ -9085,6 +9395,16 @@
 			(type default)
 		)
 		(uuid "ee307839-f887-4227-b27e-206ef4e12656")
+	)
+	(wire
+		(pts
+			(xy 163.83 186.69) (xy 156.21 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f06a8baf-d157-42e2-8489-af991de2a1b0")
 	)
 	(wire
 		(pts
@@ -9285,6 +9605,16 @@
 			(justify left bottom)
 		)
 		(uuid "57f4f7ff-0c17-468b-b36e-8b0ae1ec01e0")
+	)
+	(label "antenna"
+		(at 137.16 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62547027-8faa-4d0f-a581-36840870f5f1")
 	)
 	(label "dio1"
 		(at 200.66 36.83 180)
@@ -11091,6 +11421,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 163.83 186.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2db7553e-06bf-45dc-8c75-c97ea8353bae")
+		(property "Reference" "#PWR039"
+			(at 163.83 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 163.83 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c14d78a-f796-43e2-a46b-449f5c30f310")
+		)
+		(instances
+			(project "node"
+				(path "/27a4f14a-8aa1-45e6-81b2-af6ea87164f5"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 273.05 69.85 0)
 		(unit 1)
@@ -12141,6 +12549,87 @@
 			(project "node"
 				(path "/27a4f14a-8aa1-45e6-81b2-af6ea87164f5"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Antenna_Shield")
+		(at 165.1 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5161930f-6491-4292-9e3e-e0f0568757df")
+		(property "Reference" "AE1"
+			(at 162.814 165.608 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "U.FL"
+			(at 162.814 168.148 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical"
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Antenna with extra pin for shielding"
+			(at 165.1 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8ce04f89-79d9-4d74-bd60-67786bca0be5")
+		)
+		(pin "1"
+			(uuid "71ab1192-0e00-4b71-874e-e2e218fb8026")
+		)
+		(instances
+			(project "node"
+				(path "/27a4f14a-8aa1-45e6-81b2-af6ea87164f5"
+					(reference "AE1")
 					(unit 1)
 				)
 			)
@@ -15190,6 +15679,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 149.86 176.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2a3074d-a29e-4cfb-a741-4443eb9f5820")
+		(property "Reference" "L2"
+			(at 149.86 171.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 149.86 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 149.86 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 149.86 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0695b7e-efef-437c-bdf6-e121fbb1d895")
+		)
+		(pin "2"
+			(uuid "bd96f735-d898-465b-877f-d59b9799ca60")
+		)
+		(instances
+			(project "node"
+				(path "/27a4f14a-8aa1-45e6-81b2-af6ea87164f5"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 260.35 62.23 90)
 		(unit 1)
@@ -15463,6 +16032,87 @@
 			(project "node"
 				(path "/27a4f14a-8aa1-45e6-81b2-af6ea87164f5"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 156.21 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bbe7ff21-24b3-4e8a-93e2-ee0426b296e7")
+		(property "Reference" "C20"
+			(at 160.02 179.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "c"
+			(at 160.02 181.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 157.1752 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 156.21 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e23bde3-ef6b-4741-bb6b-f406310d94c7")
+		)
+		(pin "2"
+			(uuid "7311e405-00f6-46ee-80f6-e1c8ad14373a")
+		)
+		(instances
+			(project "node"
+				(path "/27a4f14a-8aa1-45e6-81b2-af6ea87164f5"
+					(reference "C20")
 					(unit 1)
 				)
 			)
