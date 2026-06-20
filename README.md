@@ -5,7 +5,7 @@ I think that mestastic is a great project aiming at making an offgrid network of
 
 In this repo, you will find a pcb meant to be affordable, with a 3d printable case and easily sourcable parts.
 
-## PCB!
+## Schematic and PCB!
 
 ![alt text](image.png)
 
